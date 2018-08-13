@@ -1,0 +1,198 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+/*##############################
+шапка и элементы внутри нее (v)DONE
+#########################*/
+header {
+	background-color: #002f2f;
+	height: 124px;
+	color: #fefefe;
+}
+
+.logo {
+	margin:20px 98.66px 20px 92px;
+	padding:0;
+	width: 34.34px;
+	height: 85px;
+	display: inline-block;
+	float: left;
+	
+}
+
+.mainmenu {
+	margin: 43px auto 43px auto;
+	display: inline-block;
+	list-style-type: none;
+}
+
+.mainmenu li {
+	display: inline-block;
+	margin: 0px 25px;
+	font-size: 24px;
+}
+
+.mainmenu a {
+	color: #fefefe;
+	text-decoration: none;
+}
+
+.mainmenu a:hover {
+	color:#b3b2ab;
+}
+
+.phoneblock {	
+	height: 124px;
+	color: #fefefe;
+	display: inline-block;
+	float: right;
+	margin: 29px 184px 0px 0px;
+}
+
+.phone {
+	font-size:32px;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: #fefefe;
+}
+
+.phone:hover {
+	color: #b3b2ab;
+}
+
+.phonetxt {
+	font-size:21px;
+	padding: 0;
+	margin: 0;
+}
+/*##############################
+тело с контентбоксом
+##############################*/
+body {
+	background-color: #faf9ef;
+	margin: 0;
+	padding: 0;
+}
+
+.searchresult {
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	max-width: 1280px;
+	font-size: 48px;
+	color: #002f2f;
+}
+
+.container {
+	background-color: #fffefd;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	max-width: 1280px;
+}
+/*##############################
+футер с элементами внутри
+##############################*/
+footer {
+	background-color: #046380;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	max-width: 1280px;
+	height: 198px;
+}
+
+.footertext {	
+	color: #fefefe;
+	display: inline-block;
+	float:left;
+	padding-right:0;
+	margin:55px 0 73px 40px;
+}
+
+.foot1 {
+	font-size:34px;
+	padding: 0;
+	margin: 0;
+}
+.foot2 {
+	font-size:18px;
+	padding: 0;
+	margin: 0;
+}
+
+.mailsender{
+	margin: 62px 0 50px 185px;
+	display: inline-block;
+	color: #fefefe; /*пофиксить и разделить цвет после изменения инпут поля*/
+}
+
+.mailinput {
+	border: 1px solid #cccccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    background: #ffffff !important;
+    outline: none;
+    height: 46px;
+    width: 320px;
+    font-size: 18px;
+	padding-left:20px;
+	color: #046380;
+}
+
+.mailinput::-webkit-input-placeholder {
+    color: #046380;
+} 
+
+.mailinput::-moz-placeholder {
+    color: #046380;
+}
+
+/*чекбокс*/
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"] + label:before {
+	content: "\2714";
+	color:transparent;
+	display: inline-block;
+	background-color: #fefefe;
+	border-radius: 2px;
+	font-size:18px;
+	line-height: 18px;
+	margin: 17px 8px 0 0;
+	height: 18px;
+	width: 18px;
+	text-align: center;
+	transition: color ease .3s;
+	cursor: pointer;
+	
+}
+
+input[type="checkbox"]:checked + label:before {
+    color: #046380;
+}
+
+/*кнопка*/
+
+.subbutton {
+	display: inline-block;
+	float: right;
+	max-height: 45px;
+	margin:62px 105px 0 0;
+	text-decoration: none;
+	color: #fefefe;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	background-color: #a7a37e;
+	padding: 14px 45px;
+}
+
+.subbutton:hover {
+	background-color: #807c60;
+}
