@@ -1,5 +1,6 @@
-*{
+*, *:before, *:after {
 	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
 }
 /*##############################
 шапка и элементы внутри нее (v)DONE
@@ -21,15 +22,16 @@ header {
 }
 
 .mainmenu {
-	margin: 43px auto 43px auto;
+	margin: 43px auto;
 	display: inline-block;
-	list-style-type: none;
+	
 }
 
 .mainmenu li {
 	display: inline-block;
 	margin: 0px 25px;
 	font-size: 24px;
+	list-style-type: none;
 }
 
 .mainmenu a {
@@ -90,14 +92,141 @@ body {
 	padding: 0;
 	width: 100%;
 	max-width: 1280px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+}
+
+.row .flat {
+	width: 317px;
+	height: 522px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	margin: 25px 25px;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+#status-booked {
+	border-color: #a7a37e;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 93%,#a7a37e 93%,#a7a37e 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 93%,#a7a37e 93%,#a7a37e 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 93%,#a7a37e 93%,#a7a37e 100%); 
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 93%,#a7a37e 93%,#a7a37e 100%); 
+}
+
+#status-sold {
+	border-color: #a1a1a1;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 93%,#a1a1a1 93%,#a1a1a1 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 93%,#a1a1a1 93%,#a1a1a1 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 93%,#a1a1a1 93%,#a1a1a1 100%); 
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 93%,#a1a1a1 93%,#a1a1a1 100%); 
+}
+
+#status-free {
+	border-color: #002f2f;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 93%,#002f2f 93%,#002f2f 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 93%,#002f2f 93%,#002f2f 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 93%,#002f2f 93%,#002f2f 100%); 
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 93%,#002f2f 93%,#002f2f 100%); 
+}
+
+.flat-salemark {
+	background-color: #ff4444;
+	color: #fafafa;
+	font-size: 12px;
+	float: left;
+	margin: 17px 0 0 17px;
+	padding: 5px 3px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.flat-salemark-empty {
+	float: left;
+	font-size: 12px;
+	margin: 17px 0 0 17px;
+	padding: 5px 3px;
+	color:rgba(255,255,255,0);
+}
+
+.star {
+	float:right;
+	margin: 15px 15px 0 0;
+}
+
+.card-img-container {
+	width:317px;
+	height: 240px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.flat-main-info {
+	max-width: 214px;
+	margin: 0 auto;
+}
+
+.flat-name {
+	color: #002f2f;
+	font-size: 24px;
+	height: 55px;
+}
+
+.flat-about {
+	margin: 0 auto;
+	max-width: 214px;
+}
+
+.flat-decor {
+	border-left: 3px #046380 solid;
+	padding-left: 6px;
+	display: inline-block;
+	margin:0 auto;
+}
+
+.flat-square-and-floor {
+	margin:0 4px;
+	display: inline-block;
+}
+
+#bigtext {
+	margin-bottom: 0;
+	font-size: 18px;
+	margin-top:0;
+}
+
+#smalltext {
+	margin-top: 0;
+	font-size: 13px;
+}
+
+.flat-price {
+	color: #002f2f;
+	font-size: 24px;
+	margin: 10px 0 0 0;
+}
+
+.flat-statusbar-text {
+	text-align: center;
+	margin-top:28px;
+	color:#fafafa;
+	text-transform: uppercase;
+	font-size:12px;
 }
 /*##############################
 футер с элементами внутри
 ##############################*/
 footer {
 	background-color: #046380;
-	margin: 0 auto;
-	padding: 0;
+	margin: 65px auto 100px auto;
 	width: 100%;
 	max-width: 1280px;
 	height: 198px;
@@ -112,7 +241,7 @@ footer {
 }
 
 .foot1 {
-	font-size:34px;
+	font-size: 34px;
 	padding: 0;
 	margin: 0;
 }
@@ -195,4 +324,22 @@ input[type="checkbox"]:checked + label:before {
 
 .subbutton:hover {
 	background-color: #807c60;
+}
+
+
+/*ОФОРМЛЕНИЕ JS*/
+#toTop {
+	width: 80px;
+	height: 80px;
+	background-color: #a7a37e;
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+	display: none;
+	color: #faf9ef;
+	font-size: 40px;
+	border-radius: 50%;
 }

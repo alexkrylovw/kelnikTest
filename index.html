@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Строительная компания Namespace</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='css/main.css' rel='stylesheet' type='text/css'>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <header>
 	<a class= "logo" href="index.html" alt="Строительная компания Namespace"><img src="img/logo/logo.png" alt="mainpage"></a>
@@ -25,7 +29,195 @@
 <body>
 	<p class="searchresult">Найдено 666 квартир</p>
 	<div class='container'>
-		<p>здесь будет флексбокс с контентом</p>
+		<!--<p>Сортировать по: Цене v Комнатам ^</p>  изменить с js -->
+		<div class="row">
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="fa fa-star-o" aria-hidden="true"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/studiya44.png" alt="Квартира"></div>
+				<div class="flat-main-info">				
+					<p class="flat-name">Студия №44</p>
+					<div class="flat-about">
+						<p class="flat-decor">без<br>отделки</p>
+						<div class="flat-square-and-floor"><p id="bigtext">28 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">12/14</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">1 900 000 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+			<div class="flat" id="status-free">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/1room666.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Однокомнатная №666</p>
+					<div class="flat-about">
+						<p class="flat-decor">базовая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">66 м&#178;</p><p id="smalltext">площадь</p></div>
+						<div class="flat-square-and-floor"><p id="bigtext">6/6</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">1 666 666 руб.</p>
+					<div class="flat-statusbar-text">Свободно</div>
+				</div>
+			</div>
+			<div class="flat" id="status-sold">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/2rooms567.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Двухкомнатная №567</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">56.6 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">7/14</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">5 900 000 руб.</p>
+					<div class="flat-statusbar-text">Продано</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/3rooms45.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Трехкомнатная №45</p>
+					<div class="flat-about">
+						<p class="flat-decor">без<br>отделки</p>
+						<div class="flat-square-and-floor"><p id="bigtext">56 м&#178;</p><p id="smalltext">площадь</p></div>
+						<div class="flat-square-and-floor"><p id="bigtext">1/14</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">12 900 000 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark">-17%</div><div class="flat-salemark">шок цена!</div>
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/studiya25.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Студия №25</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">18 м&#178;</p><p id="smalltext">площадь</p></div>
+						<div class="flat-square-and-floor"><p id="bigtext">12/14</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">1 900 000 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark">-6%</div>
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/4rooms259.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Четырехкомнатная №259</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">98 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">14/14</p><p id="smalltext">этаж</p></div>
+					</div>
+					<p class="flat-price">23 900 000 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="flat" id="status-free">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/1room56.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Однокомнатная №56</p>
+					<div class="flat-about">
+						<p class="flat-decor">без<br>отделки</p>
+						<div class="flat-square-and-floor"><p id="bigtext">36 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">3/6</p><p id="smalltext">этаж</p></div>
+					</div>
+					<p class="flat-price">5 666 666 руб.</p>
+					<div class="flat-statusbar-text">Свободно</div>
+				</div>
+			</div>
+			<div class="flat" id="status-free">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/3room46.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Трехкомнтаная №46</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">86 м&#178;</p><p id="smalltext">площадь</p></div>
+						<div class="flat-square-and-floor"><p id="bigtext">1/6</p><p id="smalltext">этаж</p></div>
+					</div>
+					<p class="flat-price">5 696 664 руб.</p>
+					<div class="flat-statusbar-text">Свободно</div>
+				</div>
+			</div>
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark">-9%</div><div class="flat-salemark">шок цена!</div>
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/1room2.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Однокомнатная №2</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">18 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">3/14</p><p id="smalltext">этаж</p></div>
+					</div>
+					<p class="flat-price">1 200 000 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark">-6%</div>
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/studiya12.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Студия №12</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">38 м&#178;</p><p id="smalltext">площадь</p></div>
+						<div class="flat-square-and-floor"><p id="bigtext">6/14</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">1 500 500 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark-empty">0</div> <!--фиксануть костыль-->
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/1room8.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Однокомнатная №8</p>
+					<div class="flat-about">
+						<p class="flat-decor">черновая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">48 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">3/14</p><p id="smalltext">этаж</p></div>	
+					</div>
+					<p class="flat-price">6 200 000 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+			<div class="flat" id="status-booked">
+				<div class="flat-salemark">-6%</div>
+				<a href="#" class="star"><i class="far fa-star"></i></a> <!--допилить баг с фонтасом-->
+				<div class="card-img-container"><img src="img/flatimgs/2rooms23.png" alt="Квартира"></div>
+				<div class="flat-main-info">
+					<p class="flat-name">Двухкомнатная №23</p>
+					<div class="flat-about">
+						<p class="flat-decor">базовая<br>отделка</p>
+						<div class="flat-square-and-floor"><p id="bigtext">48 м&#178;</p><p id="smalltext">площадь</p></div>	
+						<div class="flat-square-and-floor"><p id="bigtext">3/14</p><p id="smalltext">этаж</p></div>
+					</div>
+					<p class="flat-price">5 255 006 руб.</p>
+					<div class="flat-statusbar-text">Забронировано</div>
+				</div>
+			</div>
+		</div>
 	</div>
 <footer>
 	<div class="footertext">
@@ -39,7 +231,23 @@
 		</div>
 	</div>
 	<a href="index.html" class="subbutton" target="_self">Подписаться</a>
-</footer>	
+</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn();
+	} else {
+	$('#toTop').fadeOut();
+	}
+	});
+	$('#toTop').click(function() {
+	$('body,html').animate({scrollTop:0},800);
+	});
+	});
+	</script>
+	<div id = "toTop" ><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 </body>
 
 </html>
